@@ -1,6 +1,9 @@
 import express from "express";
+import cors from "cors";
 import dinosaurs from "./dinosaurs.json" assert { type: "json" };
 const app = express();
+
+app.use(cors());
 
 const PORT = process.env.PORT || 8000;
 

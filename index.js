@@ -5,6 +5,10 @@ const app = express();
 const PORT = 8000;
 
 app.get("/", (req, res) => {
+  res.send("Dinosaur API");
+});
+
+app.get("/dinosaurs", (req, res) => {
   res.json(dinosaurs);
 });
 

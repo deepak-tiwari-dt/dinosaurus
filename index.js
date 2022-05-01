@@ -2,7 +2,7 @@ import express from "express";
 import dinosaurs from "./dinosaurs.json" assert { type: "json" };
 const app = express();
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
   res.send("Dinosaur API");

@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
-  res.send("Dinosaur Test API");
+  res.send("Dinosaur Test API on master");
 });
 
 app.get("/dinosaurs", (req, res) => {
